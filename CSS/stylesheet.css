@@ -1,0 +1,99 @@
+body {
+  font-family: "Poppins", serif;
+  font-size: 15px;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+main {
+  margin-bottom: 2rem;
+}
+.four-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header {
+  text-align: center;
+  width: 650px;
+  margin: 5rem auto 3rem;
+}
+.card {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  margin-left: 30px;
+
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+
+  height: fit-content;
+  width: 350px;
+}
+h1 {
+  color: hsl(229, 6%, 66%);
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+h2 {
+  color: hsl(234, 12%, 34%);
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+h3 {
+  margin-bottom: 0.5rem;
+}
+p {
+  color: hsl(229, 6%, 66%);
+  line-height: 1.5;
+}
+.header p {
+  font-size: 18px;
+}
+.card p {
+  padding-right: 1rem;
+  margin-bottom: 2rem;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 30px;
+  grid-template-areas:
+    "div1 div2 div4"
+    " div1 div3 div4";
+
+  align-items: center;
+  width: min-content;
+}
+.Supervisor {
+  border-top: 5px solid hsl(180, 62%, 55%);
+  grid-area: div1;
+}
+.builder {
+  border-top: 5px solid hsl(0, 78%, 62%);
+  grid-area: div2;
+}
+.karma {
+  border-top: 5px solid hsl(34, 97%, 64%);
+  grid-area: div3;
+}
+.Calculator {
+  border-top: 5px solid hsl(212, 86%, 64%);
+  grid-area: div4;
+}
+.img-container {
+  text-align: right;
+}
+footer {
+  /* margin-bottom: 1rem; */
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
